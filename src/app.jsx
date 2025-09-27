@@ -1,9 +1,19 @@
-import React from "react";
+import React from 'react';
+import Header from './components/Header';
+import Map from './components/Map';
+import UpdatesFeed from './components/UpdatesFeed';
+import FloatingActionButton from './components/FloatingButton';
 
 function App() {
   return (
-    <div className="p-8 text-center">
-      <h1 className="text-3xl font-bold text-blue-600">Welcome to Pragyan Chakra!</h1>
+    // The main container with a light gray background
+    <div className="bg-gray-100 min-h-screen font-sans">
+      <Header />
+      <main>
+        <Map />
+        <UpdatesFeed />
+      </main>
+      <FloatingActionButton />
     </div>
   );
 }
